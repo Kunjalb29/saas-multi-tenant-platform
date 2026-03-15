@@ -52,6 +52,9 @@ apiClient.interceptors.response.use(
 );
 
 // ─── Auth API ───────────────────────────────────────────────────────────────
+/**
+ * Authentication API endpoints for user registration, login, and session management.
+ */
 export const authApi = {
   register: (data) => apiClient.post('/auth/register', data),
   login: (data) => apiClient.post('/auth/login', data),
