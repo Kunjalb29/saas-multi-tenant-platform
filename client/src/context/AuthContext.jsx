@@ -4,6 +4,10 @@ import toast from 'react-hot-toast';
 
 const AuthContext = createContext(null);
 
+/**
+ * AuthProvider component that wraps the application and provides
+ * authentication state and methods (login, register, logout) to all children.
+ */
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [tenant, setTenant] = useState(null);
